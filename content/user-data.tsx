@@ -28,7 +28,8 @@ export const USER_DATA = {
 
   facebook: "",
 
-  resume: "https://drive.google.com/file/d/1TXvso-C9HmArgyRiZso5-tb4F3oVvEce/view?usp=sharing",
+  resume:
+    "https://drive.google.com/file/d/1TXvso-C9HmArgyRiZso5-tb4F3oVvEce/view?usp=sharing",
 };
 
 export const TAG_LINES = {
@@ -100,6 +101,31 @@ export const TRAITS_PAGE: TraitsPage[] = [
     ],
   },
 ];
+
+export const EDUCATION = [
+  {
+    id: "unsw-msc-it-ai",
+    degree: "Master of Science",
+    field: "Information Technology (AI)",
+    institution: "UNSW Sydney",
+    location: "Sydney, NSW",
+    period: "September 2025 – Present",
+    status: "Currently pursuing",
+    description:
+      "Postgraduate study in Information Technology with a focus on Artificial Intelligence.",
+  },
+  {
+    id: "vit-btech",
+    degree: "Bachelor of Technology",
+    field: null,
+    institution: "Vellore Institute of Technology",
+    location: "Bhopal, MP, India",
+    period: "August 2020 – July 2024",
+    status: "Completed",
+    description:
+      "Completed undergraduate engineering studies at Vellore Institute of Technology, Bhopal.",
+  },
+] as const;
 
 export const PROJECTS: Project[] = [
   {
@@ -175,7 +201,16 @@ export const PROJECTS: Project[] = [
     ],
     image: "/backgrounds/cardbg1.jpg",
     imageAlt: "Drip YouTube Music Client",
-    techs: ["Dart", "Flutter", "Dart FFI", "C++", "Python", "FluentUI", "Flask", "Hive"],
+    techs: [
+      "Dart",
+      "Flutter",
+      "Dart FFI",
+      "C++",
+      "Python",
+      "FluentUI",
+      "Flask",
+      "Hive",
+    ],
   },
   {
     id: "nimbus",
@@ -226,15 +261,11 @@ export const FOOTER_DATA = {
 
   email: USER_DATA.email,
   socials: [
-    ...(USER_DATA.github
-      ? [{ name: "GitHub", url: USER_DATA.github }]
-      : []),
+    ...(USER_DATA.github ? [{ name: "GitHub", url: USER_DATA.github }] : []),
     ...(USER_DATA.linkedin
       ? [{ name: "LinkedIn", url: USER_DATA.linkedin }]
       : []),
-    ...(USER_DATA.resume
-      ? [{ name: "Resume", url: USER_DATA.resume }]
-      : []),
+    ...(USER_DATA.resume ? [{ name: "Resume", url: USER_DATA.resume }] : []),
   ],
   image: "/backgrounds/footer.jpg",
 };

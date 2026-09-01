@@ -3,12 +3,12 @@
 import HeroSection from "@/components/ui/sections/hero";
 import Navbar from "@/components/ui/sections/navbar";
 import { Experience } from "@/components/ui/sections/experience";
-import Image from "next/image";
-import { ReactNode, useState } from "react";
+import { ReactNode } from "react";
 import ProjectsGrid from "@/components/ui/sections/project";
 import BlogPreview from "@/components/ui/sections/blog-preview";
 import { PROJECTS } from "@/content/user-data";
 import Footer from "@/components/ui/sections/footer";
+import { Education } from "@/components/ui/sections/education";
 
 type Props = {
   children?: ReactNode;
@@ -33,6 +33,7 @@ export default function Home() {
       <PageContainer>
         <HeroSection />
         <Experience />
+        <Education />
         <ProjectsGrid projects={PROJECTS} />
         <BlogPreview />
       </PageContainer>
