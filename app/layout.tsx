@@ -19,7 +19,7 @@ const stack = Stack_Sans_Headline({
 });
 
 export const metadata: Metadata = {
-  title: "Bhanupratap Singh",
+  title: "Surajpratap Singh",
   description: "Backend engineer developing scalable systems.",
 
 };
@@ -37,7 +37,7 @@ export default function RootLayout({
   bg-theme-bg text-theme-fg
   transition-colors duration-300`}
       >
-        
+
         <Providers>
           {children}
         </Providers>

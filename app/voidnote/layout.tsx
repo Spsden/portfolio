@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "VoidNote — Bhanupratap Singh",
+  title: "VoidNote — Suraj pratap Singh",
   description:
     "Ephemeral note sharing encoded entirely in the URL. No backend, no database, no storage — just a temporary link.",
 };
