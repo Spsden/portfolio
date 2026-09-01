@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+
+:root {
+  /* Light theme - shades of white */
+  --background: #ffffff;
+  --foreground: #000000;
+  --background-50: #ffffff;
+  --background-100: #fafafa;
+  --background-200: #f5f5f5;
+  --background-300: #f0f0f0;
+  --background-400: #e5e5e5;
+  --foreground-50: #000000;
+  --foreground-100: #1a1a1a;
+  --foreground-200: #333333;
+  --foreground-300: #4d4d4d;
+  --foreground-400: #666666;
+  --foreground-500: #808080;
+  --foreground-600: #ff0000;
+  /* Light theme shadows - dark shadows for light background */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg:
+    0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl:
+    0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.dark {
+  --background: #000000;
+  --foreground: #ffffff;
+  --background-50: #000000;
+  --background-100: #0a0a0a;
+  --background-200: #141414;
+  --background-300: #1f1f1f;
+  --background-400: #2a2a2a;
+  --foreground-50: #ffffff;
+  --foreground-100: #f5f5f5;
+  --foreground-200: #e5e5e5;
+  --foreground-300: #d4d4d4;
+  --foreground-400: #a3a3a3;
+  --foreground-500: #808080;
+  --foreground-600: #ff0000;
+  --shadow-sm: 0 1px 2px 0 rgb(255 255 255 / 0.05);
+  --shadow-md:
+    0 4px 6px -1px rgb(255 255 255 / 0.1),
+    0 2px 4px -2px rgb(255 255 255 / 0.05);
+  --shadow-lg:
+    0 10px 15px -3px rgb(255 255 255 / 0.1),
+    0 4px 6px -4px rgb(255 255 255 / 0.05);
+  --shadow-xl:
+    0 20px 25px -5px rgb(255 255 255 / 0.15),
+    0 8px 10px -6px rgb(255 255 255 / 0.1);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-bg-50: var(--background-50);
+  --color-bg-100: var(--background-100);
+  --color-bg-200: var(--background-200);
+  --color-bg-300: var(--background-300);
+  --color-bg-400: var(--background-400);
+  --color-fg-50: var(--foreground-50);
+  --color-fg-100: var(--foreground-100);
+  --color-fg-200: var(--foreground-200);
+  --color-fg-300: var(--foreground-300);
+  --color-fg-400: var(--foreground-400);
+  --color-fg-500: var(--foreground-500);
+  --color-fg-600: var(--foreground-600);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-stack-headline: var(--font-stack-sans-headline);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  /* font-family: Arial, Helvetica, sans-serif;
+   */
+  font-family: "Stack Sans Headline", sans-serif;
+  font-optical-sizing: auto;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
